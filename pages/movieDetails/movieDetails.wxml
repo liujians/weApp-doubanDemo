@@ -1,0 +1,48 @@
+<!-- movieDetails.wxml -->
+<view>
+	<view class="padding" style="display:flex">
+		<image class="listImg" src="{{msg.images.medium}}" mode="aspectFit"></image>
+		<view class="padding" style="flex:1;position:relative;">
+			<view class="pull-right">{{msg.ratings_count}}人评分</view>
+			<view>评分：{{msg.rating.average}}</view>
+			<view>{{msg.year}}年</view>
+			<view>
+				<span wx:for="{{msg.countries}}" wx:index="index">{{item}}<span wx:if="{{index<msg.countries.length-1}}">/</span></span>
+			</view>
+			<view>
+				<span wx:for="{{msg.genres}}" wx:index="index">{{item}}<span wx:if="{{index<msg.genres.length-1}}">/</span></span>
+			</view>
+
+			<view style="width:100%">
+				<navigator url="../player/player" class="wa-button wa-button-sm" style="position:absolute;bottom:0;">观看</navigator>
+			</view>
+		</view>
+	</view>
+	<view class="wa-grid">
+		<view class="wa-grid-50 padding">
+			<button class="wa-button wa-button-sm wa-button-block wa-danger">我想看</button>
+		</view>
+		<view class="wa-grid-50 padding">
+			<button class="wa-button wa-button-sm wa-button-block">感兴趣</button>
+		</view>
+	</view>
+	<view >
+		<!-- <view class="padding"><button class="wa-button wa-button-sm" bindtap="call">拨打电话测试按钮</button></view> -->
+		<view class="padding">想看人数：{{msg.wish_count}}</view>
+		
+		<view class="padding">导演：<span wx:for="{{msg.directors}}">{{item.name}}</span></view>
+		<view>
+			<view class="padding">主演:</view>
+			
+			<view class="wa-list">
+				<view class="wa-item wa-item-ava" wx:for="{{msg.casts}}" style="border:none">
+					<image class="item-img" src="{{item.avatars.medium}}" mode="aspectFill"></image>
+					<view class="pull-right">喜欢</view>
+					<view class="textSl">{{item.name}}</view>
+				</view>
+			</view>
+		</view>
+		<view style="clear:both"></view>
+		<view class="padding">{{msg.summary}}</view>
+	</view>
+</view>

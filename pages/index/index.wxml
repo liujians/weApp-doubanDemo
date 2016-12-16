@@ -1,0 +1,7 @@
+<!-- index.wxml -->
+<import src="../template_list.wxml"></import>
+<view>
+	<template is="list_1" data="{{arr_in_theaters}}"/>
+	<template is="list_3" data="{{arr_top250}}"/>
+	<template is="list_2" data="{{arr_coming_soon}}"/>
+</view>

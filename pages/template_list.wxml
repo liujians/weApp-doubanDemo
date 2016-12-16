@@ -1,0 +1,48 @@
+<!-- template_list.wxml -->
+<template name="list_1">
+	<view wx:if="{{arr_in_theaters}}">
+		<view class="text-center wa-info padding">
+			<navigator url="../inTheaters/inTheaters" class="pull-right" wx:if="{{arr_in_theaters.type}}">更多</navigator>
+			<view class="bigTitle">{{arr_in_theaters.title}}</view>
+		</view>
+		<view class="wa-grid text-center">
+			<navigator wx:for="{{arr_in_theaters.subjects}}" wx:for-item="i" wx:key="unique" url="../movieDetails/movieDetails?id={{i.id}}" class="wa-grid-33">
+				<image class="padding listImg" src="{{i.images.medium}}" mode="aspectFit"></image>
+				<view class="title textSl padding-half" >{{i.title}}</view>
+				<view class="line20">{{i.rating.average!=0?i.rating.average:"暂无评分"}}</view>
+			</navigator>
+		</view>
+	</view>
+</template>
+
+<template name="list_2">
+	<view wx:if="{{arr_coming_soon}}">
+		<view class="text-center wa-info padding">
+			<navigator url="../comingSoon/comingSoon" class="pull-right" wx:if="{{arr_coming_soon.type}}">更多</navigator>
+			<view class="bigTitle">{{arr_coming_soon.title}}</view>
+		</view>
+		<view class="wa-grid text-center">
+			<navigator wx:for="{{arr_coming_soon.subjects}}" wx:for-item="i" wx:key="unique" url="../movieDetails/movieDetails?id={{i.id}}" class="wa-grid-33">
+				<image class="padding listImg" src="{{i.images.medium}}" mode="aspectFit"></image>
+				<view class="title textSl padding-half" >{{i.title}}</view>
+				<view class="line20">{{i.rating.average!=0?i.rating.average:"暂无评分"}}</view>
+			</navigator>
+		</view>
+	</view>
+</template>
+
+<template name="list_3">
+	<view wx:if="{{arr_top250.type}}">
+		<view class="text-center wa-info padding">
+			<navigator url="../top250/top250" class="pull-right" wx:if="{{arr_top250.type}}">更多</navigator>
+			<view class="bigTitle">{{arr_top250.title}}</view>
+		</view>
+		<view class="wa-grid text-center">
+			<navigator wx:for="{{arr_top250.subjects}}" wx:for-item="i" wx:key="unique" class="wa-grid-33" data-id="{{i.id}}" url="../movieDetails/movieDetails?id={{i.id}}">
+				<image class="padding listImg" src="{{i.images.medium}}" mode="aspectFit"></image>
+				<view class="title textSl padding-half" >{{i.title}}</view>
+				<view class="line20">{{i.rating.average!=0?i.rating.average:"暂无评分"}}</view>
+			</navigator>
+		</view>
+	</view>
+</template>

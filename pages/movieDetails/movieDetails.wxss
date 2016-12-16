@@ -1,0 +1,9 @@
+/*movieDetails.wxss*/
+.ava{
+	width: 150rpx;
+	height: 150rpx;
+	vertical-align:middle;
+}
+.castsBox{
+	width: 157rpx;
+}

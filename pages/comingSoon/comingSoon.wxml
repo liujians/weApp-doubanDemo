@@ -1,0 +1,5 @@
+<!-- comingSoon.wxml -->
+<import src="../template_list.wxml"></import>
+<view>
+	<template is="list_2" data="{{arr_coming_soon}}"/>
+</view>

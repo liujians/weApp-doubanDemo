@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/inTheaters/inTheaters",
+    "pages/comingSoon/comingSoon",
+    "pages/top250/top250",
+    "pages/movieDetails/movieDetails",
+    "pages/player/player",
+    "pages/logs/logs",
+    "pages/book/book",
+    "pages/bookDetails/bookDetails",
+    "pages/mine/mine",
+    "pages/map/map",
+    "pages/systemInfo/systemInfo",
+    "pages/audio/audio",
+    "pages/compass/compass"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影"
+      }, 
+      {
+        "pagePath": "pages/book/book",
+        "text": "图书"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

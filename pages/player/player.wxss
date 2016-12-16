@@ -1,0 +1,9 @@
+/*player.wxss*/
+#myVideo{
+	width: 100%;
+	height: 500rpx;
+}
+.danmuInput{
+	margin:10px;
+	border-bottom: 1px solid #ddd;
+}

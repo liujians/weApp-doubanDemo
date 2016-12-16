@@ -1,0 +1,5 @@
+<!-- top250.wxml -->
+<import src="../template_list.wxml"></import>
+<view>
+	<template is="list_3" data="{{arr_top250}}"/>
+</view>

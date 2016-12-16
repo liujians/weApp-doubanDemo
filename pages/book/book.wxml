@@ -1,0 +1,17 @@
+<!-- book.wxml -->
+<div class="padding" style="display:flex;position:relative;border-bottom: 1px solid #ddd;">
+	<input bindblur="bindInputBlur" placeholder="请输入关键字" style="border-bottom: 1px solid #ddd;width:600rpx;height:28px;"/>
+	<button bindtap="searchBook" class="wa-button wa-button-sm">搜索</button>
+</div>
+<view>
+	<view class="wa-grid text-center">
+		<navigator wx:for="{{arr_booklist.books}}" wx:for-item="i" wx:key="unique" class="wa-grid-33" data-id="{{i.id}}" url="../bookDetails/bookDetails?id={{i.id}}">
+			<image class="padding listImg" src="{{i.images.medium}}" mode="aspectFit"></image>
+			<view class="title textSl padding-half line20" >{{i.title}}</view>
+			<view class="line20">{{i.rating.average!=0?i.rating.average:"暂无评分"}}</view>
+		</navigator>
+		<view wx:if="{{arr_booklist.books.length==0}}">
+			<view>未找到你要的书籍</view>
+		</view>
+	</view>
+</view>

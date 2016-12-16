@@ -1,0 +1,15 @@
+/**app.wxss**/
+@import "wa-ui.wxss";
+.bigTitle{
+	font-size: 14px;
+}
+.listImg{
+	width: 200rpx;
+	height: 300rpx;
+}
+.floatL{
+	float: left;
+}
+.line20{
+	line-height: 20px;
+}
