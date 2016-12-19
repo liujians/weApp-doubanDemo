@@ -12,4 +12,4 @@
 
 项目演示
 
-![](http://ogo5zlrgk.bkt.clouddn.com/image/GIF_douban.gif)
+![](https://ogo5zlrgk.bkt.clouddn.com/image/GIF_douban.gif)
