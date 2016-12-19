@@ -13,4 +13,4 @@
 
 项目演示
 
-![](http://ogo5zlrgk.bkt.clouddn.com/image/GIF_douban.gif)
+![](https://github.com/liujians/weApp-doubanDemo/tree/master/image/GIF_douban.gif)
