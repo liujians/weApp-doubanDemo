@@ -13,4 +13,4 @@
 
 项目演示
 
-![](https://github.com/liujians/weApp-doubanDemo/tree/master/image/GIF_douban.gif)
+![](https://github.com/liujians/weApp-doubanDemo/blob/master/img/GIF_douban.gif)
