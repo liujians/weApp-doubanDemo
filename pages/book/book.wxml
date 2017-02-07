@@ -1,6 +1,9 @@
 <!-- book.wxml -->
+<view class="banner">
+		<image class="banner_img" src="/img/banner3.jpeg" mode="aspectFill"></image>  
+	</view>
 <div class="padding" style="display:flex;position:relative;border-bottom: 1px solid #ddd;">
-	<input bindblur="bindInputBlur" placeholder="请输入关键字" style="border-bottom: 1px solid #ddd;width:600rpx;height:28px;"/>
+	<input bindblur="bindInputBlur" placeholder="请输入关键字" style="border: 1px solid #ddd;width:1000rpx;height:10rpx;font-size:12px;color:#ccc;border-radius:10rpx;padding:0rpx 30rpx;margin-right:20rpx;"/>
 	<button bindtap="searchBook" class="wa-button wa-button-sm">搜索</button>
 </div>
 <view>
@@ -8,7 +11,10 @@
 		<navigator wx:for="{{arr_booklist.books}}" wx:for-item="i" wx:key="unique" class="wa-grid-33" data-id="{{i.id}}" url="../bookDetails/bookDetails?id={{i.id}}">
 			<image class="padding listImg" src="{{i.images.medium}}" mode="aspectFit"></image>
 			<view class="title textSl padding-half line20" >{{i.title}}</view>
-			<view class="line20">{{i.rating.average!=0?i.rating.average:"暂无评分"}}</view>
+			<view class="line20">
+				<image class="line20_img" src="/img/stars1.png" mode="aspectFill"></image>
+				{{i.rating.average!=0?i.rating.average:"暂无评分"}}
+			</view>
 		</navigator>
 		<view wx:if="{{arr_booklist.books.length==0}}">
 			<view>未找到你要的书籍</view>

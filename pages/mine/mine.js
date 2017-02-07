@@ -38,7 +38,7 @@ Page({
 	},
 	action(){
 		wx.showActionSheet({
-		  itemList: ['A', 'B', 'C'],
+		  itemList: ['菜单1', '菜单2', '菜单3'],
 		  success: function(res) {
 		    if (!res.cancel) {
 		      console.log(res.tapIndex)

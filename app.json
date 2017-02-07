@@ -1,5 +1,6 @@
 {
   "pages":[
+
     "pages/index/index",
     "pages/inTheaters/inTheaters",
     "pages/comingSoon/comingSoon",
@@ -17,23 +18,30 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#333",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
+    "selectedColor":"#54b2ff",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "电影"
+        "text": "电影",
+        "iconPath":"img/movie_icon.png",
+        "selectedIconPath":"img/movie_icon1.png"
       }, 
       {
         "pagePath": "pages/book/book",
-        "text": "图书"
+        "text": "图书",
+        "iconPath":"img/reading_icon.png",
+        "selectedIconPath":"img/reading_icon1.png"
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "我的"
+        "text": "我的",
+        "iconPath":"img/me_icon.png",
+        "selectedIconPath":"img/me_icon1.png"
       }
     ]
   }

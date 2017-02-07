@@ -1,11 +1,11 @@
 <!-- systemInfo.wxml -->
-<view class="padding">
-	<button class="wa-success" bindtap="getSys">显示系统信息</button>
+<view class="padding" style="margin-top:40rpx;">
+	<button class="wa-success" bindtap="getSys" style="float:left;width:48%;">显示系统信息</button>
+	<button class="wa-success" bindtap="getNetwork" style="float:right;width:48%;">显示网络状态</button>
 </view>
-<view class="padding">
-	<button class="wa-success" bindtap="getNetwork">显示网络状态</button>
-</view>
-<view class="padding">
+<view style="clear:both;"></view>
+<view class="rectangle"></view>
+<view class="padding" style="line-height:50rpx;margin-top:30rpx;">
 	<view>手机型号：{{sys.model}}</view>
 	<view>设备像素比：{{sys.pixelRatio}}</view>
 	<view>窗口宽度：{{sys.windowWidth}}</view>

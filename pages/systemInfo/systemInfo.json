@@ -1,1 +1,4 @@
-{}
+{
+	"enablePullDownRefresh":true,    
+    "navigationBarTitleText": "系统信息"
+}

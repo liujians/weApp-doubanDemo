@@ -2,8 +2,11 @@
 <view>
 	<video id="myVideo" src="{{src}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
 	<view class="padding">
-		<button bindtap="bindButtonTap">更改视频</button>
+		<view class="pic">
+			<image class="picin" src="/img/picture3.png" mode="aspectFill"></image>  
+		</view>
+		<button class="change" bindtap="bindButtonTap">更改视频</button>
 		<input class="danmuInput" bindblur="bindInputBlur" placeholder="请输入弹幕"/>
-	    <button bindtap="bindSendDanmu">发送弹幕</button>
+	    <button class="send" bindtap="bindSendDanmu" style="padding:0;">发送弹幕</button>
 	</view>
 </view>

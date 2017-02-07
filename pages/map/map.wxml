@@ -1,9 +1,10 @@
 <!-- map.wxml -->
 <view class="padding">
-	<button class="wa-primary" bindtap="location">打开地图</button>
+	<button class="wa-primary" bindtap="location" style="float:left;width:48%;">打开地图</button>
+	<button class="wa-primary" bindtap="choose" style="float:right;width:48%;">选择位置</button>
 </view>
 <view class="padding">
-	<button class="wa-primary" bindtap="choose">选择位置</button>
+	
 </view>
 {{choose.name}}
 {{choose.address}}

@@ -11,7 +11,9 @@ page text{
   font-family: "Helvetica Neue",Helvetica,'microsoft yahei ui', 'microsoft yahei','simhei',Arial,sans-serif
 }
 page view{
-  font-size: 14px;
+  padding:0;
+  font-size: 12px;
+  color:#666;
   font-family: "Helvetica Neue",Helvetica,'microsoft yahei ui', 'microsoft yahei','simhei',Arial,sans-serif
 }
 /*basic*/
@@ -30,14 +32,14 @@ page view{
   text-overflow: ellipsis;
 }
 .title{
-  font-size: 36rpx;
+  font-size: 28rpx;
   font-weight: bold;
 }
 .border-basic{
   border: 1px solid #ddd
 }
 .padding{
-  padding:20rpx;
+  padding:25rpx 30rpx;
 }
 .padding-half{
   padding:10rpx;
@@ -56,18 +58,24 @@ page view{
 /*background*/
 page .wa-primary{
     border-color: #0c63ee;
-    background-color: #387ef5;
+    background-color: #54b2ff;
     color: #fff;
+    font-size:12px;
+    width:30%;
 }
 page .wa-info {
     border-color: #0a9ec7;
-    background-color: #11c1f3;
-    color: #fff;
+    background-color: #fff;
+    color: #999;
+    font-size:12px;
+    border-bottom:1px solid #f0f0f0;
+    margin-bottom:10rpx;
 }
 page .wa-success {
     border-color: #28a54c;
-    background-color: #33cd5f;
+    background-color: #54b2ff;
     color: #fff;
+    font-size:12px;
 }
 page .wa-warning {
     border-color: #e6b400;
@@ -76,7 +84,7 @@ page .wa-warning {
 }
 page .wa-danger {
     border-color: #e42012;
-    background-color: #ef473a;
+    background-color: #54b2ff;
     color: #fff;
 }
 page .wa-dark {
@@ -91,11 +99,11 @@ page .wa-dark {
 }
 .wa-item{
   width: 100%;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #f0f0f0;
   margin: -1px 0;  
-  font-size: 16px;
+  font-size: 12px;
   display: block;
-  color: #444;
+  color: #333;
   padding:10px;
   height: 40px;
   box-sizing: border-box;
@@ -176,18 +184,17 @@ page .wa-dark {
 }
 /*button*/
 .wa-button{
-    border-color: #b2b2b2;
-    background-color: #f8f8f8;
+    border-color: #ccc;
+    border-radius:10rpx;
+    background-color: #f0f0f0;
     color: #444;
-    position: relative;
     display: inline-block;
     margin: 0;
     padding: 0 12px;
     min-width: 120rpx;
     min-height: 40px;
     border-width: 1px;
-    border-style: solid;
-    border-radius: 2px;
+    border-style: none;
     vertical-align: top;
     text-align: center;
     text-overflow: ellipsis;
@@ -200,7 +207,7 @@ page .wa-dark {
 }
 .wa-button-sm{
     padding: 0 8px;
-    min-width: 90rpx;
+    min-width: 120rpx;
     min-height: 28px;
     font-size: 12px;
     line-height: 26px;
